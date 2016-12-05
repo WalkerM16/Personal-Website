@@ -10,7 +10,7 @@ window.onload = function() {
         
         //Create thumbnail on mouseover
         image.onmouseenter = function() {
-            this.opacity = 0.1;
+            this.opacity = 0;
         }
         
         //Remove thumbnail on mouseout
