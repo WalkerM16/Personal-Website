@@ -99,12 +99,13 @@ html {
     overflow-x: hidden;
     background-image: url("/img/bg/lowcontrast.svg");
     background-size: 100% 100%;
-    background-size: cover;
+    background-size: 100%;
     padding-top: 100px;
 }
 
 ul {
-    position: absolute;
+    z-index: 1000;
+    position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -166,24 +167,48 @@ h2 {
     margin-bottom: 1em;
 }
 
-/* Circular div for hover effects */
-.thumb-div {
-    border-radius: 50%;
+p {
+    margin: 0 20% 0 20%;
+    text-align: center;
+    font-family: sans-serif;
+    color: #999
 }
 
-/* Default styling for thumbnail images */
-.thumb-div img {
-    display: block;
+/* Default styling for thumbnail div */
+.thumbDiv {
     border-radius: 50%;
-    width: 90%;
-    height: 90%;
+    width: 15vw;
+    height: 15vw;
     margin: auto;
 }
 
+.thumbImg {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    position: relative;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    -webkit-transition: margin 0.5s, width 0.5s, height 0.5s, filter 0.5s, -webkit-transform 0.5s;
+    transition: margin 0.5s, width 0.5s, height 0.5s, filter 0.5s, transform 0.5s;
+    filter: brightness(1.0) blur(0px);
+}
+
+.thumbDiv:hover img {
+    filter: brightness(0.4) blur(5px);
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
 /* Default styles for hovertext - invisible by default */
-.thumb-div .hoverText {
+.hoverText {
     color: white;
+    position: relative;
+    margin-top: -60%;
     text-align: center;
+    width: 15vw;
     font-family: 'raleway', sans-serif;
     font-weight: 400;
     font-size: 2em;
@@ -191,30 +216,53 @@ h2 {
     -webkit-transition: filter 0.5s, -webkit-transform 0.5s;
     transition: filter 0.5s, transform 0.5s;
     filter: opacity(0);
-    float: top;
-    top: -5.5em;
-    position: relative;
 }
 
-.thumb-div:hover .hoverText {
+.thumbDiv:hover h3 {
     filter: opacity(1);
 }
 
-.thumb-div:hover .img-thumbnail {
-    filter: brightness(0.4);
-    width: 95%;
-    height: 95%;
+
+#trinity, #dumpster, #throw, #color {
+    filter: opacity(0);
+    display: none;
+    padding-bottom: 20vh;
+    -webkit-transition: filter 1s, -webkit-transform 1s;
+    transition: filter 1s, transform 1s;
 }
 
-.img-thumbnail {
-    display: block;
-    border-radius: 50%;
-    filter: brightness(1) blur(0px);
-    width: 90%;
-    height: 90%;
+#work {
+    margin: 0 25vw 0 27.5vw;
+}
+
+table {
     margin: auto;
-    -webkit-transition: width 0.5s, height 0.5s, background-color 0.5s, filter 0.5s, -webkit-transform 0.5s;
-    transition: width 0.5s, height 0.5s, background-color 0.5s, filter 0.5s, transform 0.5s;
+    font-size: 1.5em;
+    font-family: 'raleway', sans-serif;
+}
+
+thead {
+    background-color: #999;
+    color: black;
+    text-align: center;
+}
+
+td, th {
+    border-collapse: separate;
+    padding: 10px;
+    text-align: center;
+}
+
+th, td {
+    border-bottom: 2px solid #aaa;
+}
+
+#tableDiv {
+    margin: 10vh 20vw 0 20vw;
+}
+
+#trinityTransparent {
+    background-color: white;
 }
 
 /* ==========================================================================

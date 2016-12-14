@@ -40,31 +40,47 @@
             <li><a href="resume.html">resume</a></li>
             <li><a href="contact.html">contact</a></li>
         </ul>
-        <h1>My name is Walker.</h1>
-        <h2>I design programs, icons, and games.</h2>
+        <h1>I'm Walker.</h1>
+        <h2>I design programs, logos, and games.</h2>
         
-        <div class="clearfix mxn2">
-            <div class="col-6 px2 mx-auto">
-                <div class="thumb-div col col-4">
-                    <img class="img-thumbnail" src="img/DumpsterLogoKuri.png" alt="Image">
-                    <h3 class="hoverText">Text</h3>
+        <div class="clearfix mxn2" id="work">
+            <div class="col-12 mx-auto">
+                <div onclick="showDiv('dumpster')" class="thumbDiv col col-4">
+                    <img class="thumbImg" src="/img/DumpsterLogoKuri.png">
+                    <h3 class="hoverText">Dumpster Divers</h3>
                 </div>
-                <div class="thumb-div col col-4">
-                    <img class="img-thumbnail" src="img/Trinity_Bold.png" alt="Image">
+                <div onclick="showDiv('trinity')" class="thumbDiv col col-4">
+                    <img class="thumbImg" src="/img/Trinity_Bold.png">
                     <h3 class="hoverText">Trinity</h3>
                 </div>
-                <div class="thumb-div col col-4">
-                    <img class="img-thumbnail"  src="img/Saving_Throw_Cropped.png" alt="Image">
+                <div onclick="showDiv('throw')" class="thumbDiv col col-4">
+                    <img class="thumbImg" src="/img/Saving_Throw_Cropped.png">
                     <h3 class="hoverText">Saving Throw</h3>
                 </div>
             </div>
+        </div>
+        
+        <div class="col-6 col-sm-12 px2 mx-auto" id="dumpster">
+            <h2>The Dumpster Divers</h2>
+            <p>I designed this logo for a school recycling initiative.</p>
+        </div>
+        
+        <div class="col-6 col-sm-12 px2 mx-auto" id="trinity">
+            <h2>Trinity Banquet Hall</h2>
+            <p>I designed this logo for the final project in my graphic design course at the Seacoast School of Technology.</p>
+        </div>
+        
+        <div class="col-6 col-sm-12 px2 mx-auto" id="throw">
+            <h2>Saving Throw</h2>
+            <p>I designed this logo for a team participating in the 2015 Rocket League Championship Series.</p>
         </div>
     
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/zenscroll-min.js"></script>
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
