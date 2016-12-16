@@ -243,7 +243,7 @@ table {
 
 thead {
     background-color: #999;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -263,6 +263,64 @@ th, td {
 
 #trinityTransparent {
     background-color: white;
+}
+
+footer {
+    border-top: 1px grey solid;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'raleway', sans-serif;
+    color: #555;
+    margin-bottom: 0;
+}
+
+footer p {
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #999;
+}
+
+form {
+    margin: 0 20vw 0 20vw;
+    display: block;
+    font-size: 1.5em;
+    font-family: raleway;
+    text-align: center;
+}
+
+.inputDiv{
+    margin-top: 5vh;
+    position:relative;
+    line-height:30px;
+}
+
+.required{
+    color: #555;
+}
+
+.optionalDiv {
+    color: #999;
+}
+
+.error {
+    color: #E33;
+}
+
+#submit {
+    margin-top: 5vh;
+    font-family: 'raleway', sans-serif;
+    padding: 1px;
+}
+
+#resume {
+    margin-top: 10vh;
+}
+
+#resume p {
+    color: #555;
 }
 
 /* ==========================================================================
