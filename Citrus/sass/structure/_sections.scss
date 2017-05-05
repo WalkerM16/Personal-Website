@@ -1,0 +1,66 @@
+//
+//-- General sections
+//
+
+.section {
+	padding: 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 15em;
+}
+
+.section__title {
+	font-size: em(32);
+	text-transform: uppercase;
+	color: $color-highlight;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+
+	@include tablet-port {
+		font-size: em(42);
+	}
+
+	@include wide {
+		font-size: em(50);
+	}
+}
+
+.section__intro-text {
+	font-size: em(14);
+	color: $color-base-light;
+	margin-bottom: 3rem;
+
+	@include tablet-port {
+		font-size: em(16);
+		margin-bottom: 6rem;
+	}
+
+	@include wide {
+		font-size: em(18);
+		margin-bottom: 8rem;
+	}
+}
+
+.left {
+    text-align: left;
+    background-position: right;
+    margin-right: 10%;
+    
+    @media screen and (max-width: $small-width) {
+        text-align: center;
+        margin: auto;
+        background-position: bottom;
+    }
+}
+
+.right {
+    text-align: right;
+    background-position: left;
+    margin-left: 10%;
+    
+    @media screen and (max-width: $small-width) {
+        text-align: center;
+        margin: auto;
+        background-position: bottom;
+    }
+}

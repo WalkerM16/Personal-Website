@@ -19,9 +19,6 @@
         
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         
-        <!-- Validation script -->
-        <script src="js/validate.js"></script>
-        
         
     </head>
     <body>
@@ -44,31 +41,20 @@
             <li><a href="contact.html">contact</a></li>
         </ul>
         
-        <h1>Send me a message.</h1>
+        <h1>Here are some of my random projects.</h1>
         
-        <form name='mainForm' id='mainForm' method='get' action='/thanks.html'>
-            <fieldset>
-                <div class='inputDiv requiredDiv'>
-                    <label for="name">Name<br></label>
-                    <input name="name" id="name" type="text" size="30" class="required">
+        <div class="clearfix mxn2" id="work">
+            <div class="col-12 mx-auto">
+                <div onclick="location.href='Citrus/index.html'" class="thumbDiv col col-4">
+                    <img class="thumbImg" src="/img/Citrus.jpg">
+                    <h3 class="hoverText">Citrus</h3>
                 </div>
-                <div class='inputDiv requiredDiv'>
-                    <label for="email">Email<br></label>
-                    <input name="email" id="email" type="text" size="30" class="required">
+                <div onclick="location.href='Concentration/index.html'" class="thumbDiv col col-4">
+                    <img class="thumbImg" src="/img/Concentration.jpg">
+                    <h3 class="hoverText">Concentration</h3>
                 </div>
-                <div class='inputDiv requiredDiv'>
-                    <label for="email">Message<br></label>
-                    <input name="message" id="message" type="text" size="30" class="required">
-                </div>
-            </fieldset>
-            <fieldset>
-                <div class='inputDiv optionalDiv'>
-                    <label for="how">How did you hear about us?<br></label>
-                    <input name="how" id="how" type="text" size="30" class="required">
-                </div>
-            </fieldset>
-        <input type="submit" name="submit" value="Submit Form" id="submit">
-        </form>
+            </div>
+        </div>
         
         <footer>
             <h3><b>Walker McHenry</b></h3>
@@ -82,6 +68,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/zenscroll-min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

@@ -1,0 +1,29 @@
+//
+// Personal lemon
+// Main SCSS file
+//
+
+// load config
+@import 'config/config';
+
+// load mixins
+@import 'mixins/mixins_general';
+@import 'mixins/mixins_breakpoints';
+
+// load base
+@import 'base/reset';
+@import 'base/helper_classes';
+@import 'base/typography';
+@import 'base/buttons';
+
+// load structure
+@import 'structure/header';
+@import 'structure/sections';
+@import 'structure/footer';
+
+// load pages
+@import 'pages/hero';
+@import 'pages/orange';
+@import 'pages/lemon';
+@import 'pages/kumquat';
+@import 'pages/save';

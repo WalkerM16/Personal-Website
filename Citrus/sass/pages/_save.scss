@@ -1,0 +1,54 @@
+//Call to Action Area
+
+.save {
+	background: $color-base;
+	margin-bottom: 0;
+    margin: auto;
+    text-align: center;
+
+	.section__title, .section__intro-text {
+		color: #FFF;
+	}
+}
+
+.save-form__button {
+	font-weight: bold;
+	border: 0;
+	color: #FFF;
+    border-radius: 0;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, $color-gradient1, $color-gradient2);
+	padding: 1em 2em;
+	transition: filter 0.2s;
+    display: inline;
+    margin: 1em;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.save-form__button p {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.save-form__button p:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.save-form__button:hover p {
+  padding-right: 25px;
+}
+
+.save-form__button:hover p:after {
+  opacity: 1;
+  right: 0;
+}
