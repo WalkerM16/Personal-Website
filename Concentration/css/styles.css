@@ -1,0 +1,202 @@
+* {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    background-image: url("../img/footer_lodyas.png");
+}
+
+header, footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1em 0.5em;
+    text-align: center;
+    width: 100%;
+    
+    /* Fadein animation on page load */
+    -webkit-animation: fadein 4s; /* Webkit */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+            animation: fadein 4s;
+}
+
+#menu {
+    margin-top: 4em;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    display: block;
+    margin: auto;
+    padding-top: 0.5em;
+    text-align: center;
+    width: 100%;
+    
+    /* Fadein animation on page load */
+    -webkit-animation: fadein 4s; /* Webkit */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+            animation: fadein 4s;
+}
+
+#menu a:last-child {
+    color: red;
+    padding-top: 1em;
+}
+
+@media (max-width: 700px) {
+    #menu a {
+        font-size: 4em;
+        margin-bottom: 0.5em;
+    }
+}
+
+#menu a:hover {
+    filter: opacity(0.7);
+}
+
+footer h1 {
+    font-size: 3em;
+}
+
+footer h1:hover {
+    opacity: 0.5;
+}
+
+.outer_card,
+.inner_card {
+    transition: transform 0.25s, background 0.2s;
+    text-align: center;
+    
+        /* Fadein animation on page load */
+    -webkit-animation: fadein 4s; /* Webkit */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+            animation: fadein 4s;
+}
+
+.gameWindow {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer_card {
+    backface-visibility: visible;
+    background-size: cover;
+    width: 10em;
+    height: 14em;
+}
+
+/* Increase the size of the cards on small displays */
+@media (max-width: 600px) {
+    .gameWindow {
+        width: 95%;
+    }
+    .outer_card {
+        width: 15em;
+        height: 21em;
+    }
+}
+
+.outer_card:hover {
+    transform: scale(1.05);
+    filter: saturate(1.3) brightness(1.3);
+}
+
+.matched:hover {
+    transform: rotateY(-180deg);
+    filter: brightness(0.5);
+}
+
+.inner_card {
+    font-size: 9em;
+    backface-visibility: hidden;
+    height: auto;
+    transform: rotateY(-180deg) scaleX(-1);
+}
+
+.outer_card.selected .inner_card {
+    transform: rotateY(0deg) scaleX(-1);
+}
+
+.outer_card.selected {
+    transform: rotateY(-180deg);
+}
+
+.matched {
+    transform: rotateY(-180deg);
+    filter: brightness(0.5);
+}
+
+.matched .inner_card {
+    backface-visibility: visible;
+    transform: rotateY(180deg);
+    transition: 0s;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+/* Fadein animation on page load */
+
+@keyframes fadein {
+    from { 
+        opacity: 0; 
+        margin-top: 100px;  
+    }
+    to   { 
+        opacity: 1; 
+        margin-top: 0px;   
+    }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { 
+        opacity: 0; 
+        margin-top: 100px;  
+    }
+    to   { 
+        opacity: 1; 
+        margin-top: 0px;   
+    }
+}
+
+/* Webkit */
+@-webkit-keyframes fadein {
+    from { 
+        opacity: 0; 
+        margin-top: 100px;  
+    }
+    to   { 
+        opacity: 1; 
+        margin-top: 0px;   
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { 
+        opacity: 0; 
+        margin-top: 100px;  
+    }
+    to   { 
+        opacity: 1; 
+        margin-top: 0px;   
+    }
+}
