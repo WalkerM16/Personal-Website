@@ -95,7 +95,6 @@ window.Util =  {
                 if (self.selected) {
                     self.selected = false;
                     self.html.classList.toggle('selected');
-                    tries++;
                 } else {
                     self.selected = true;
                     self.html.classList.toggle('selected');
@@ -146,6 +145,7 @@ window.onload = function() {
                     self.card2 = target;
                     if (self.card1 == self.card2) {
                         self.card2 = null;
+                        tries++;
                     } else {
                         //Two cards are face up
                         if (self.card1.value === self.card2.value) {
