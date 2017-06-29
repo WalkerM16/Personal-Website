@@ -97,11 +97,8 @@ textarea {
 
 html {
     overflow-x: hidden;
-    background-image: url("/img/bg/lowcontrast.svg");
-    background-size: 100% 100%;
-    background-size: 100%;
     padding-top: 100px;
-    background-image: url("/img/bg/swirl_pattern.png");
+    background-image: url("/img/bg/sayagata-400px.png");
     background-size: auto;
     background-repeat: repeat;
 }
